@@ -104,5 +104,3 @@ Viewer(status=lambda info: f" {info.position}/{info.total} - press {info.quit_ke
 
 - `cls`/`clear` or a child process that resets the screen can erase the header. `viewer.refresh()` redraws it.
 - A line printed without a newline (`print("x", end="")`, progress bars using `\r`) appears once the newline arrives.
-- Mouse wheel scrolling is not handled; use the keyboard.
-- Tested on Windows 11 (ConPTY and a real console). Not yet run on Linux terminals or inside the Windows Terminal window.
